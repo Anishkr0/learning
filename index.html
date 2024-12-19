@@ -3,9 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Anish Kumar | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
-<body>
-    <h1>Welcome to anish Portfolio</h1>
+<body class="bg-black text-white">   
+    <!-- Navigation -->
+    <nav class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+            <div class="text-xl font-mono flex flex-nowrap"><span class="text-green-300">Anish</span><span class=" hidden lg:block"> - Frontend Developer</span></div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-green-400">Resume</a>
+                <a href="#" class="hover:text-green-400">About Me</a>
+                <a href="#" class="hover:text-green-400">Projects</a>
+                <a href="#" class="hover:text-green-400">Contact Us</a>
+            </div>
+            <a href="./assets/image.png" target="_blank" download>
+                <button class="bg-green-500 px-6 py-3 rounded-sm  transition-all hover:transition-all delay-100  hover:bg-black hover:border hover:border-green-500 hover:text-green-300 ">Download CV</button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 pt-20">
+        <div class="max-w-4xl mx-auto text-center space-y-16">
+            <h1 class="text-4xl md:text-6xl font-mono mb-6">
+                Expert Developers for<br>
+                a Connected <span class="text-green-400">{World}</span>
+            </h1>
+            <div class="flex space-x-10">
+                <a href="contact.html" class="bg-green-500 px-6 py-3 rounded-sm w-[250px]  hover:bg-black hover:border hover:border-green-500 hover:text-green-300 ">
+                    GET STARTED
+                </a>
+                <p class="text-gray-400  text-start">
+                    Create innovative software solutions that give developers the speed and simplicity they need to move at the speed of evolution.
+                </p>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Editor Section -->
+    <section class="container mx-auto px-4 py-12 ">
+        <div class=" rounded-lg p-6 font-mono text-sm overflow-x-auto">
+           <img src="./assets/poster.png" alt="">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-4 py-10">
+        <div class="flex space-x-10">
+            <div>
+                <h2 class="text-[clamp(16px,3vw,40px)] font-mono mb-12">
+                    Finally you can develop
+                    <span class="text-green-400">{Frontend}</span> web
+                    applications in one place.
+                </h2>
+                <div>
+                    <h3 class="text-2xl mb-4">Optimized Frameworks</h3>
+                    <p class="text-gray-400 mb-4">
+                        Build better applications with integrated tools for testing and functioning React, Angular, and other.
+                    </p>
+                    <button class="text-green-400 hover:underline">EXPLORE MORE FEATURES →</button>
+                </div>
+            </div>
+            <div class=" rounded-lg px-6 py-3 font-mono text-sm overflow-x-auto self-start">
+                <img src="./assets/code.png" class="border border-green-300 shadow-lg shadow-green-900" alt="missing code ">
+             </div>
+        </div>
+    </section>
+    <!-- Progress Bars Section -->
+    <section class="container mx-auto my-16">
+        <h2 class="text-white text-2xl mb-8 font-semibold relative">
+            SKILLS
+            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-green-500"></span>
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>HTML</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>JAVASCRIPT</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>JQUERY / AJAX</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>PHP</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>LARAVEL</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>ANGULAR</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-white mb-2">
+                        <span>MYSQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="h-2 bg-gray-800 rounded-full">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Icons Section -->
+    <section class=" container mx-auto">
+        <h2 class="text-white text-2xl mb-8 font-semibold relative">
+            SKILLS
+            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-green-500"></span>
+        </h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Row 1 -->
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-yellow-500 text-2xl"><i class="fa-brands fa-html5"></i></span>
+                <span class="text-white">HTML</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-blue-500 text-2xl"><i class="fa-brands fa-css3"></i></span>
+                <span class="text-white">CSS/SCSS</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-purple-500 text-2xl"><i class="fa-brands fa-css3-alt"></i></span>
+                <span class="text-white">Talwind CSS</span>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-cyan-500 text-2xl"><i class="fa-brands fa-bootstrap"></i></span>
+                <span class="text-white">Bootstrap</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-pink-500 text-2xl"><i class="fa-brands fa-node-js"></i></span>
+                <span class="text-white">JavaScript</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-orange-600 text-2xl"><i class="fa-brands fa-react"></i></span>
+                <span class="text-white">React JS</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-blue-400 text-2xl"><i class="fa-brands fa-angular"></i></span>
+                <span class="text-white">Angular</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-orange-500 text-2xl"><i class="fa-brands fa-app-store-ios"></i></span>
+                <span class="text-white">Ionic</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-blue-600 text-2xl"><i class="fa-brands fa-github-alt"></i></span>
+                <span class="text-white">Git</span>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-yellow-600 text-2xl"><i class="fa-brands fa-bitbucket"></i></span>
+                <span class="text-white">BitBucket</span>
+            </div>
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-pink-600 text-2xl"><i class="fa-brands fa-linux"></i></span>
+                <span class="text-white">Linux</span>
+            </div>
+            
+            <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
+                <span class="text-green-500 text-2xl"><i class="fa-brands fa-php"></i></span>
+                <span class="text-white">PHP</span>
+            </div>
+        </div>
+    </section>
+    <!-- Resume Header -->
+    <div class="container mx-auto my-16">
+        <div class="mb-4 relative">
+            <h2 class="text-white uppercase text-2xl mb-8 font-semibold relative">
+                Resume
+                <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-green-500"></span>
+            </h2>
+        </div>
+        <h1 class="text-green-500 text-3xl font-bold mb-12">CHECK MY RESUME</h1>
+
+        <!-- Resume Content -->
+        <div class="grid md:grid-cols-2 gap-8 ps-2">
+            <!-- Left Column -->
+            <div class="space-y-12">
+                <!-- Summary Section -->
+                <div>
+                    <h2 class="text-white text-2xl font-semibold mb-6">Summary</h2>
+                    <div class="relative pl-6 border-l-2 border-gray-800">
+                        <div class="absolute -left-[9px] top-0">
+                            <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-green-500 text-xl mb-2">ANISH KUMAR</h3>
+                        <p class="text-gray-300 italic mb-4">
+                            Innovative and deadline-driven Software Engineer with Fresher delivering user-centric software solutions from conceptualization to refined products, meeting deadlines effectively.
+                        </p>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>Bakrour, Bodhgaya, Gaya</li>
+                            <li>+91 7295074340</li>
+                            <li>info.anishlpu@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div>
+                    <h2 class="text-white text-2xl font-semibold mb-6">Education</h2>
+                    <div class="space-y-8">
+                        <!-- Master's Degree -->
+                        <div class="relative pl-6 ">
+                            <div class="absolute -left-[9px] top-0">
+                                <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                            </div>
+                            <h3 class="text-green-500 text-xl upppercase">Bachelor OF COMPUTER APPLICATION</h3>
+                            <span class="inline-block bg-gray-800 text-white px-3 py-1 text-sm rounded my-2">
+                                2022 - 2025
+                            </span>
+                            <p class="text-gray-300 italic mb-2">Lovely Professional University, Punjab</p>
+                            <p class="text-gray-300">
+                                Skilled in computer applications, specializing in software development, problem-solving, and system analysis, with a Bachelor's degree in Computer Applications.
+                            </p>
+                        </div>
+
+                        <!-- Bachelor's Degree -->
+                        <div class="relative pl-6 ">
+                            <div class="absolute -left-[9px] top-0">
+                                <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                            </div>
+                            <h3 class="text-green-500 text-xl">Intermidate(+2 High School)</h3>
+                            <span class="inline-block bg-gray-800 text-white px-3 py-1 text-sm rounded my-2">
+                                2019 - 2021
+                            </span>
+                            <p class="text-gray-300 italic">+2 High School, Bodhgaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <h2 class="text-white text-2xl font-semibold mb-6">Professional Experience</h2>
+                <div class="space-y-8">
+                    <!-- Current Job -->
+                    <div class="relative pl-6 border-l-2 border-gray-800">
+                        <div class="absolute -left-[9px] top-0">
+                            <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-green-500 text-xl uppercase">BOONOZ PVT. LTD, Haryana ( INTERSHIP )</h3>
+                        <span class="inline-block bg-gray-800 text-white px-3 py-1 text-sm rounded my-2">
+                            DEC - 2024
+                        </span>
+                        <p class="text-gray-300 italic mb-4">Rewari, Haryana</p>
+                        <ul class="text-gray-300 space-y-3 list-disc ml-4">
+                            <li>Led the creation of over 2 software projects, handling frontend along with responsive design.</li>
+                            <li>Worked with team of designers and developers, guiding tasks and ensuring quality.</li>
+                            <li>Collaborated across departments to meet deadlines and exceed client expectations.</li>
+                            <li>Contributed to company strategy and decision-making.</li>
+                            <li>Stayed updated on industry trends for continuous improvement.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Previous Job -->
+                    <div class="relative pl-6 border-l-2 border-gray-800">
+                        <div class="absolute -left-[9px] top-0">
+                            <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-green-500 text-xl">MERN CERTIFICATION (CYPHERSCHOOL)</h3>
+                        <span class="inline-block bg-gray-800 text-white px-3 py-1 text-sm rounded my-2">
+                            2024-JUNE
+                        </span>
+                        <p class="text-gray-300 italic mb-4">ONLINE</p>
+                        <ul class="text-gray-300 space-y-3 list-disc ml-4">
+                            <li>Successfully executed multiple  projects encompassing frontend , meeting college specifications.</li>
+                            <li>Managed up to 5 projects or tasks at a given time while under pressure minor and major both.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 my-12 border-t border-gray-800">
+        <div class=" text-center">
+
+            <!-- <div>grid grid-cols-2 md:grid-cols-5 gap-8
+                <h3 class="font-bold mb-4">Company</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                    <li><a href="#" class="hover:text-white">Press</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Resource</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Blog</a></li>
+                    <li><a href="#" class="hover:text-white">Newsletter</a></li>
+                    <li><a href="#" class="hover:text-white">Events</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Legal</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Terms</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy</a></li>
+                    <li><a href="#" class="hover:text-white">Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Support</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Help</a></li>
+                    <li><a href="#" class="hover:text-white">Status</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Platform</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">iOS</a></li>
+                    <li><a href="#" class="hover:text-white">Android</a></li>
+                    <li><a href="#" class="hover:text-white">Web</a></li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="text-center text-gray-400 mt-12">
+            © 2024-2028 All Rights Reserved • Anish
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
-<body class="bg-black text-white">   
+
+<body class="bg-black text-white px-5 md:px-0">
     <!-- Navigation -->
     <nav class="container mx-auto px-4 py-6">
         <div class="flex justify-between items-center">
-            <div class="text-xl font-mono flex flex-nowrap"><span class="text-green-300">Anish</span><span class=" hidden lg:block"> - Frontend Developer</span></div>
+            <div class="text-xl font-mono flex flex-nowrap"><span class="text-green-300">Anish</span><span
+                    class=" hidden lg:block"> - Frontend Developer</span></div>
             <div class="hidden md:flex space-x-6">
                 <a href="#" class="hover:text-green-400">Resume</a>
                 <a href="#" class="hover:text-green-400">About Me</a>
@@ -19,26 +22,30 @@
                 <a href="#" class="hover:text-green-400">Contact Us</a>
             </div>
             <a href="./assets/image.png" target="_blank" download>
-                <button class="bg-green-500 px-6 py-3 rounded-sm  transition-all hover:transition-all delay-100  hover:bg-black hover:border hover:border-green-500 hover:text-green-300 ">Download CV</button>
+                <button
+                    class="bg-green-500 px-6 py-3 rounded-sm  transition-all hover:transition-all delay-100  hover:bg-black hover:border hover:border-green-500 hover:text-green-300 ">Download
+                    CV</button>
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 pt-20">
-        <div class="max-w-4xl mx-auto text-center space-y-16">
+    <section class="container mx-auto px-4 pt-10 lg:pt-20">
+        <div class="max-w-4xl mx-auto text-center space-y-10">
             <h1 class="text-4xl md:text-6xl font-mono mb-6">
-                Expert Developers for<br>
+                Expert Developers for<br class="hidden md:block">
                 a Connected <span class="text-green-400">{World}</span>
             </h1>
-            <div class="flex space-x-10">
-                <a href="contact.html" class="bg-green-500 px-6 py-3 rounded-sm w-[250px]  hover:bg-black hover:border hover:border-green-500 hover:text-green-300 ">
+            <!-- Changed flex to flex-col on mobile, horizontal on md screens -->
+            <div class="flex flex-col md:flex-row md:space-x-10 space-y-6 md:space-y-0 items-start">
+                <a href="contact.html"
+                    class="bg-green-500 px-6 py-3 rounded-sm md:w-[250px] mx-auto md:mx-0 hover:bg-black hover:border hover:border-green-500 hover:text-green-300">
                     GET STARTED
                 </a>
-                <p class="text-gray-400  text-start">
-                    Create innovative software solutions that give developers the speed and simplicity they need to move at the speed of evolution.
+                <p class="text-gray-400 text-start">
+                    Create innovative software solutions that give developers the speed and simplicity they need to move
+                    at the speed of evolution.
                 </p>
-               
             </div>
         </div>
     </section>
@@ -46,39 +53,46 @@
     <!-- Code Editor Section -->
     <section class="container mx-auto px-4 py-12 ">
         <div class=" rounded-lg p-6 font-mono text-sm overflow-x-auto">
-           <img src="./assets/poster.png" alt="">
+            <img src="./assets/poster.png" alt="">
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="container mx-auto px-4 py-10">
-        <div class="flex space-x-10">
-            <div>
-                <h2 class="text-[clamp(16px,3vw,40px)] font-mono mb-12">
+        <!-- Changed flex to flex-col on mobile, row on larger screens -->
+        <!-- Added md: breakpoint for spacing control -->
+        <div class="flex flex-col md:flex-row md:space-x-10 space-y-8 md:space-y-0">
+            <!-- Added order classes to control stacking -->
+            <div class="order-1 md:order-2">
+                <h2 class="text-[clamp(28px,3vw,40px)] font-mono mb-4 lg:mb-12">
                     Finally you can develop
                     <span class="text-green-400">{Frontend}</span> web
                     applications in one place.
                 </h2>
                 <div>
-                    <h3 class="text-2xl mb-4">Optimized Frameworks</h3>
+                    <h3 class="text-xl mb-4">Optimized Frameworks</h3>
                     <p class="text-gray-400 mb-4">
-                        Build better applications with integrated tools for testing and functioning React, Angular, and other.
+                        Build better applications with integrated tools for testing and functioning React, Angular, and
+                        other.
                     </p>
                     <button class="text-green-400 hover:underline">EXPLORE MORE FEATURES →</button>
                 </div>
             </div>
-            <div class=" rounded-lg px-6 py-3 font-mono text-sm overflow-x-auto self-start">
-                <img src="./assets/code.png" class="border border-green-300 shadow-lg shadow-green-900" alt="missing code ">
-             </div>
+            <!-- Added order classes and full width on mobile -->
+            <div
+                class="order-2 md:order-1 w-full md:w-auto rounded-lg px-6 py-3 font-mono text-sm overflow-x-auto self-start">
+                <img src="./assets/code.png" class="border border-green-300 shadow-lg shadow-green-900 w-full"
+                    alt="missing code">
+            </div>
         </div>
     </section>
     <!-- Progress Bars Section -->
-    <section class="container mx-auto my-16">
+    <section class="container mx-auto my-10">
         <h2 class="text-white text-2xl mb-8 font-semibold relative">
             SKILLS
             <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-green-500"></span>
         </h2>
-        
+
         <div class="grid md:grid-cols-2 gap-8">
             <!-- Left Column -->
             <div class="space-y-6">
@@ -174,7 +188,7 @@
             SKILLS
             <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-green-500"></span>
         </h2>
-        
+
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <!-- Row 1 -->
             <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
@@ -225,7 +239,7 @@
                 <span class="text-pink-600 text-2xl"><i class="fa-brands fa-linux"></i></span>
                 <span class="text-white">Linux</span>
             </div>
-            
+
             <div class="bg-gray-900 p-4 rounded flex items-center space-x-3">
                 <span class="text-green-500 text-2xl"><i class="fa-brands fa-php"></i></span>
                 <span class="text-white">PHP</span>
@@ -233,7 +247,7 @@
         </div>
     </section>
     <!-- Resume Header -->
-    <div class="container mx-auto my-16">
+    <div class="container mx-auto my-10">
         <div class="mb-4 relative">
             <h2 class="text-white uppercase text-2xl mb-8 font-semibold relative">
                 Resume
@@ -255,7 +269,9 @@
                         </div>
                         <h3 class="text-green-500 text-xl mb-2">ANISH KUMAR</h3>
                         <p class="text-gray-300 italic mb-4">
-                            Innovative and deadline-driven Software Engineer with Fresher delivering user-centric software solutions from conceptualization to refined products, meeting deadlines effectively.
+                            Innovative and deadline-driven Software Engineer with Fresher delivering user-centric
+                            software solutions from conceptualization to refined products, meeting deadlines
+                            effectively.
                         </p>
                         <ul class="text-gray-300 space-y-2">
                             <li>Bakrour, Bodhgaya, Gaya</li>
@@ -280,7 +296,8 @@
                             </span>
                             <p class="text-gray-300 italic mb-2">Lovely Professional University, Punjab</p>
                             <p class="text-gray-300">
-                                Skilled in computer applications, specializing in software development, problem-solving, and system analysis, with a Bachelor's degree in Computer Applications.
+                                Skilled in computer applications, specializing in software development, problem-solving,
+                                and system analysis, with a Bachelor's degree in Computer Applications.
                             </p>
                         </div>
 
@@ -314,7 +331,8 @@
                         </span>
                         <p class="text-gray-300 italic mb-4">Rewari, Haryana</p>
                         <ul class="text-gray-300 space-y-3 list-disc ml-4">
-                            <li>Led the creation of over 2 software projects, handling frontend along with responsive design.</li>
+                            <li>Led the creation of over 2 software projects, handling frontend along with responsive
+                                design.</li>
                             <li>Worked with team of designers and developers, guiding tasks and ensuring quality.</li>
                             <li>Collaborated across departments to meet deadlines and exceed client expectations.</li>
                             <li>Contributed to company strategy and decision-making.</li>
@@ -333,19 +351,21 @@
                         </span>
                         <p class="text-gray-300 italic mb-4">ONLINE</p>
                         <ul class="text-gray-300 space-y-3 list-disc ml-4">
-                            <li>Successfully executed multiple  projects encompassing frontend , meeting college specifications.</li>
-                            <li>Managed up to 5 projects or tasks at a given time while under pressure minor and major both.</li>
+                            <li>Successfully executed multiple projects encompassing frontend , meeting college
+                                specifications.</li>
+                            <li>Managed up to 5 projects or tasks at a given time while under pressure minor and major
+                                both.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-    <!-- Footer -->
-    <footer class="container mx-auto px-4 my-12 border-t border-gray-800">
-        <div class=" text-center">
+        <!-- Footer -->
+        <footer class="container mx-auto px-4 my-12 border-t border-gray-800">
+            <div class=" text-center">
 
-            <!-- <div>grid grid-cols-2 md:grid-cols-5 gap-8
+                <!-- <div>grid grid-cols-2 md:grid-cols-5 gap-8
                 <h3 class="font-bold mb-4">Company</h3>
                 <ul class="space-y-2 text-gray-400">
                     <li><a href="#" class="hover:text-white">About</a></li>
@@ -386,9 +406,10 @@
                 </ul>
             </div>
         </div> -->
-        <div class="text-center text-gray-400 mt-12">
-            © 2024-2028 All Rights Reserved • Anish
-        </div>
-    </footer>
+                <div class="text-center text-gray-400 mt-12">
+                    © 2024-2028 All Rights Reserved • Anish
+                </div>
+        </footer>
 </body>
+
 </html>
